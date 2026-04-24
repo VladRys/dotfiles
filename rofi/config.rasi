@@ -1,0 +1,15 @@
+@theme "~/.config/rofi/style.rasi"
+
+configuration {
+    modi: "drun";
+    show-icons: true;
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+listview{
+    lines: 5;
+}
+
+window {
+   width: 30%;
+}

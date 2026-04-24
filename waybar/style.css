@@ -1,0 +1,61 @@
+* {
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* Панель */
+window#waybar {
+    background: rgba(10, 10, 15, 0.7);
+    color: #dcdcdc;
+    margin-top: 8px; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Общие модули */
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery {
+    padding: 6px 12px;
+    margin: 4px 6px;
+    background: rgba(20, 20, 30, 0.6);
+}
+
+/* Акцент (фиолетовый) */
+#clock {
+    color: #c084fc;
+    font-weight: bold;
+}
+
+/* Hover эффект */
+#clock:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover {
+    background: rgba(192, 132, 252, 0.15);
+}
+
+/* Workspace */
+#workspaces button {
+    padding: 4px 8px;
+    margin: 4px;
+    color: #888;
+    background: transparent;
+}
+
+#workspaces button.active {
+    color: #c084fc;
+    background: rgba(192, 132, 252, 0.2);
+}
+
+#workspaces button:hover {
+    color: #ffffff;
+}
