@@ -27,6 +27,14 @@ window#waybar {
     background: rgba(20, 20, 30, 0.6);
 }
 
+#mpris {
+    padding: 6px 12px;
+    margin: 4px 6px;
+    background: rgba(20, 20, 30, 0.6);
+    color: #c084fc;
+    font-weight: 500;
+}
+
 /* Акцент (фиолетовый) */
 #clock {
     color: #c084fc;

@@ -5,7 +5,16 @@
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["cpu", "memory", "network", "pulseaudio", "battery"],
+  "modules-right": ["mpris", "cpu", "memory", "network", "pulseaudio", "battery"],
+
+  "mpris":{
+    "format": "  {artist} - {title}",
+    "format-paused": "  {artist} - {title}",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
+    "interval": 1  
+  },
 
   "clock": {
     "format": "  {:%H:%M}",
