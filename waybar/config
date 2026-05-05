@@ -1,11 +1,11 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 32,
+  "height": 38,
 
   "modules-left": ["hyprland/workspaces"],
   "modules-center": ["clock"],
-  "modules-right": ["mpris", "cpu", "memory", "network", "pulseaudio", "battery"],
+  "modules-right": ["mpris", "cpu", "memory", "network", "pulseaudio",  "custom/notification", "battery"],
 
   "mpris":{
     "format": "  {artist} - {title}",
@@ -14,6 +14,17 @@
     "on-click-right": "playerctl next",
     "on-click-middle": "playerctl previous",
     "interval": 1  
+  },
+
+"custom/notification": { "tooltip": false, "format": "{icon}", "format-icons": { "notification": "<span foreground='red'><small><sup>⬤</sup></small></span>", "none": " ", "dnd-notification": "<span foreground='red'><small><sup>⬤</sup></small></span>", "dnd-none": " " }, "return-type": "json", "exec-if": "which swaync-client", "exec": "swaync-client -swb", "on-click": "sleep 0.1 && swaync-client -t -sw", "on-click-right": "sleep 0.1 && swaync-client -d -sw", "escape": true },
+
+"keyboard-state": {
+    "format": "  {layout}",
+    "format-icons": {
+	"us": "EN",
+	"ua": "UA",
+	"ru": "RU"
+	}
   },
 
   "clock": {
